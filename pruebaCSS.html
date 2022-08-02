@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #262525;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    #imgPoke {
+        display: flex;
+        position: absolute;
+        width: 70%;
+        justify-self: center;
+        justify-items: center;
+        opacity: 0.1;
+        left: 25%;
+        top: -50%;
+    }
+
+    #contenedor {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        align-content: space-around;
+        margin: 50px;
+        
+       /*  justify-content: space-around; */
+        
+        
+
+    }
+
+    #nombre {
+        align-self: center;
+        
+        width: 400px;
+        height: 100px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+    #nombrePokemon{
+        margin-top: 30px;
+        
+    }
+
+    span {
+        color: white;
+        font-size: xx-large;
+
+    }
+
+    #stats {
+        font-size: xx-large;
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+    #imgPrincipal {
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        border-radius: 100%;
+    }
+    #type {
+        font-size: xx-large;
+        margin: 10px;
+        padding: 10px;
+        width: 400px;
+        height: 100px;
+        background-color: white;
+        border-radius: 25px;
+    }
+    #Abilities{
+        font-size: xx-large;
+        margin: 10px;
+        padding: 10px;
+        width: 400px;
+        height: 100px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+
+    #subContenedor {
+        padding: 50px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    #imgenPrincipal{
+        position: absolute;
+        width: 25%;
+        top: 14%;
+        left: 40%;
+        
+    }
+</style>
+
+<body>
+    <img id="imgPoke" src="imgPoke.png" alt="" srcset="">
+
+    <div id="contenedor">
+        <div id="nombre">
+           <h1 id="nombrePokemon"> PIKACHU </h1> 
+        </div>
+
+        <div id="subContenedor">
+            <div id="tituloStats">
+                <span>Stats</span>
+                <div id="stats">
+
+                </div>
+            </div>
+            <div id="imgPrincipal">
+                <img id="imgenPrincipal" src="imgenPrincipal.png" alt="" srcset="">
+            </div>
+            <div id="subType">
+                <span>Type</span>
+                <div id="type">
+
+                </div>
+                <span>Abilities</span>
+                <div id="Abilities">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
