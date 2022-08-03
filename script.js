@@ -30,6 +30,7 @@ function imageFront(datos) {
   img.src = `${datos.sprites.front_default}`
   img.addEventListener('click', (e) => {
     //e.preventDefault()
+    div2.remove()
    setLocalStorage(datos)
     console.log("guardando...")
     console.log(e)
@@ -67,6 +68,26 @@ nombre.innerText = `${local.name.toUpperCase()}`
 /* nombrePokemon.append("ss") */
 imgenPrincipal.src = `${local.sprites.other.dream_world.front_default}`
 console.log(local.sprites.front_default)
+
+
+let statss = document.getElementById("stats")
+///////////////
+local.stats.forEach(element => {
+  console.log(element.stat.name + " " + element.base_stat)
+  let ol = document.createElement("lu");
+  let divBar = document.createElement("div");
+
+  
+  divBar.className = "divBarStyles"
+  ol.append(`${element.stat.name.toUpperCase()}`);
+  ol.append(divBar)
+  statss.append(ol)
+  divBar.setAttribute("style", `width: ${element.base_stat}%;color:white;height: 4%;margin-bottom:0.1em;padding: 0.5em;background-color: green;align-content:end;font-size:large;`)
+ divBar.append(`${element.base_stat}%`)
+ statss.className = "stats"
+
+})
+
 /* let pic1 = document.getElementById("pic1")
 let pic2 = document.getElementById("pic2")
 let pic3 = document.getElementById("pic3")

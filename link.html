@@ -24,7 +24,7 @@
         top: -50%;
     }
 
-    #contenedor {
+    #contene {
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -55,15 +55,23 @@
     span {
         color: white;
         font-size: xx-large;
+        padding: 100px;
 
     }
 
     #stats {
+        margin-top: 15px;
+        padding: 35px;
+        text-align: start;
         font-size: xx-large;
         width: 400px;
         height: 500px;
         background-color: white;
         border-radius: 25px;
+    }
+
+    .divBarStyles{
+        top: -50px;
     }
 
     #imgPrincipal {
@@ -92,17 +100,17 @@
     }
 
 
-    #subContenedor {
+    #subcontene {
         padding: 50px;
         display: flex;
         justify-content: space-around;
 
     }
     #imgenPrincipal{
-        position: absolute;
-        width: 25%;
-        top: 22%;
-        left: 38%;
+        /* position: absolute; */
+        width: 100%;
+       /*  top: 32%;
+        left: 38%; */
         
     }
 </style>
@@ -110,12 +118,12 @@
 <body>
     <img id="imgPoke" src="imgPoke.png" alt="" srcset="">
 
-    <div id="contenedor">
+    <div id="contene">
         <div id="nombre">
            <h1 id="nombrePokemon"> PIKACHU </h1> 
         </div>
 
-        <div id="subContenedor">
+        <div id="subcontene">
             <div id="tituloStats">
                 <span>Stats</span>
                 <div id="stats">
